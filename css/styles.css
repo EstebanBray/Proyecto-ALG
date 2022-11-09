@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    
+    
+}
+header{
+    background-color: #011627;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.li a{
+    color: black;
+}
+
+    /*css header*/
+
+.header__logo{
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+}
+.menu{
+    font-size:x-large;
+    font-weight: bold;
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    justify-content: space-around; 
+    padding: 0 100px;
+    color: white;
+    }
+.sub-menu{
+        margin: 30px;
+        padding: 0 20px 150px 20px;
+        color: red;
+    }
+    .nav-color{
+        color: white;
+    }
+    a{text-decoration: none;}
+    
+    /*css main*/
+    
+    
+
+    .contenedor{
+        background-image: url("https://www.shutterstock.com/image-photo/electric-guitar-repair-vintage-on-600w-287661821.jpg");
+        width:100%;
+        height: 90vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+    }
+    .titulo{
+        font-size: 80px;
+        font-weight: bold;
+        color: #FDFFFC;
+
+    }
+    .texto{
+        background-color: black;
+        font-weight:bold;
+        font-size:xx-large;
+        font-style: oblique;
+        color: white;
+         background-size: 400px ;
+         text-align: center;
+    }
+    h2{
+        font-size: 40px;
+        text-align: center;
+        background-color: #011627;
+        color: white;
+    }
+    .card-product{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: black;
+
+    }
+    .nombre{
+        font-size: 20px;
+        color: white;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+    .foto{
+        width: 150px;
+        height: 200px;
+        border: 2px solid black;
+        padding: 2px;
+        
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+    }
+    .card-position{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        background-color: black;
+    }
+          /*sobre nosotros*/
+
+    .sn{
+        display: flex;
+        flex-direction: row;
+        background-color:#32506A ;
+     }     
+    .img-sn{
+        width: 500px;
+        height: 500px;
+    }
+    .parrafo-sn{
+        font-size: 50px;
+        color: whitesmoke;
+        margin: 20px 10px 10px 10px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        padding: 20px;
+    }
+    .sn-2{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .btn{
+        font-weight: bold;
+        font-style: normal;
+        font-size: 30px;
+        color: beige;
+        background-color: black;
+    }
+
+    /*galeria*/
+
+    .galeria{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-content: space-between;
+        background-color: black;
+    }
+    .gal-1{
+        width: 800px;
+        height: 400px;
+        margin: 10px;
+        border: white solid 2px;
+    }
+    .gal-2{
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        border: white solid 2px;
+    }
+    .gal-3{
+        height: 400px;
+        width: 400px;
+        margin: 10px;
+        border: white solid 2px;
+    }
+    .gal-4{
+        width: 800px;
+        height: 400px;
+        margin: 10px; 
+        border: white solid 2px;
+    }
+
+    /*footer*/
+
+    footer{
+        background-color: #011627;
+        padding-bottom: 30px;
+    }
+    h3{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 20px;
+        color: white;
+    }
+    .foot{
+        display: flex;
+        flex-direction: column;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    .foot-inp{
+        margin: 2px 2px;
+    }
+#foot-1{
+    display: flex;
+    flex-direction: row;
+}    
+.btn-2{
+    width: 70px;
+    height: fit-content;
+}
+
+/*servicios*/
+
+.servicio-restauracion{
+display: flex;
+flex-direction: row;
+background-color: #32506A;
+text-align: center;
+line-height: 80px;
+}
+.guitarra-titulo{
+    font-weight: bold;
+    background-color: #32506A;
+    font-size: x-large;
+    padding: 15px;
+    text-align: center;
+    margin-left: 0;
+}
+.img-product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.product-titulo{
+    font-weight: bold;
+}
+.products{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: lightcyan;
+}
+#contacto{
+    text-align: center;
+    font-weight: bolder;
+    background-color: #32506A;
+}
