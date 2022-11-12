@@ -64,19 +64,30 @@ header{
 
     }
     .texto{
+        height: 100px;
         background-color: black;
         font-weight:bold;
         font-size:xx-large;
         font-style: oblique;
         color: white;
          background-size: 400px ;
-         text-align: center;
-    }
+        display: flex;
+        justify-content: center;
+        align-items: center;    
+}
     h2{
+        height: 120px;
         font-size: 40px;
         text-align: center;
         background-color: #011627;
         color: white;
+    }
+    .card-titulo{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        
     }
     .card-product{ 
         display: flex;
@@ -107,8 +118,13 @@ header{
         flex-direction: row;
         justify-content: space-around;
         background-color: black;
-    }
+     }
+
+
+      
+        
           /*sobre nosotros*/
+          
 
     .sn{
         display: flex;
@@ -213,10 +229,21 @@ background-color: #32506A;
 text-align: center;
 line-height: 80px;
 }
-.guitarra-titulo{
-    font-weight: bold;
+.titulo-servicios{
     background-color: #32506A;
-    font-size: x-large;
+    color: white;
+    font-style:oblique;
+    font-weight: bold;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.intro-servicios{
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    font-size: 50px;
     padding: 15px;
     text-align: center;
     margin-left: 0;
@@ -241,4 +268,5 @@ line-height: 80px;
     text-align: center;
     font-weight: bolder;
     background-color: #32506A;
+    color: white;
 }
