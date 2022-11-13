@@ -80,17 +80,31 @@
                     <div class="product-titulo">gibson les paul</div>
                 </div>
             </div>
-              <footer>
+           
+        <footer>
             <h3>Telefono: 555-5555</h3>
             <h3>Mail: alg@gmail.com</h3>
-            <div id="foot-1">
+            <form class="row gy-2 gx-3 align-items-center">
                 <div class="foot">
-                    <input type=" text" name="full-name" id="nombre" placeholder="Nombre y Apellido" class="foot-inp">
-                    <input type="text" name="phone-number" id="telefono" placeholder="Telefono" class="foot-inp">
-                    <input type="text" name="mail" id="correo" placeholder="Mail" class="foot-inp">
+                    <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInput">Nombre</label>
+                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Nombre">
+                    </div>
+                    <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Apellido</label>
+                    <div class="input-group">
+                    
+                        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Mail">
+                    </div>
+                    </div>
+                        <div class="foot-1">
+                        <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
                 </div>
-                <input type="submit" value="enviar" class="btn-2">
-            </div>
+              </form>
+           
         </footer>
     </main>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

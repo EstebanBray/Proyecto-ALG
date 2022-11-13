@@ -10,7 +10,10 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,100&display=swap" rel="stylesheet">
-
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
          <title>ALG</title>
     </head>
    
@@ -34,53 +37,36 @@
                     </div>
                 </nav>
             </div>
-            <!-- <img class="header__logo" src="./imagenes/logo.jpg" alt="ALG logo">
-            <nav>
-                <ul class="menu">
-                    <li class="sub-menu"><a class="nav-color" href="./index.html"> Home</a></li>
-                    <li class="sub-menu"><a class="nav-color"  href="./pages/servicios.html">Servicios</a></li>
-                    <li class="sub-menu"><a class="nav-color"  href="./pages/productos.html">Productos</a></li>
-                    <li class="sub-menu"><a class="nav-color"  href="./pages/galeria.html">Galeria</a></li>
-                    <li class="sub-menu"><a class="nav-color"  href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav> -->
+           
         </header>
         <main>
             <section class="contenedor">
-                <h1 class="titulo">Reparación y Restauración de guitarras</h1>
+                <h1 class="titulo animate__animated animate__fadeInRight">Reparación y Restauración de guitarras</h1>
             </section>
-            <div class="texto">
-                <p>“Nada es mas hermoso que una guitarra, excepto, posiblemente, dos”</p>
-            </div>
+                <div class="texto">
+                    <p>“Nada es mas hermoso que una guitarra, excepto, posiblemente, dos”</p>
+                </div>
                 <h2 class="card-titulo">PRODUCTOS</h2>
-                <div class="card-position">
-                    <section class="card-product">
-                        <div class="card">
-                        <a href="./pages/productos.html" class="nombre">GUITARRAS ELECTRICAS</a>
-                            <a href="./pages/productos.html"><img src="./imagenes/guitarra electrica.jpg" alt="guitarra electrica" class="foto"></a>
-                        </div>
-                    </section>
-                
-                    <section class="card-product">
-                        <div class="card">
-                            <a href="./pages/productos.html" class="nombre">BAJOS</a>
-                            <a href="./pages/productos.html"><img src="./imagenes/bajos.jpg" alt="bajos" class="foto"></a>
-                        </div>
-                    </section>
-                    <section class="card-product">
-                        <div class="card">
-                            <a href="./pages/productos.html" class="nombre">ACUSTICAS</a>
-                            <a href="./pages/productos.html"><img src="./imagenes/acustica.jpg" alt="acustica" class="foto"></a>
-                        </div>
-                    </section>
-                    <section class="card-product">
-                        <div class="card">
-                            <a href="./pages/productos.html" class="nombre">ACCESORIOS</a>
-                            <a href="./pages/productos.html"><img src="./imagenes/accesorios.jpg" alt="accesorios" class="foto"></a>
+                <div class="products">
+                    <div class="img-product">
+                        <img src="./imagenes/guitarra electrica.jpg"" alt="guitarra " class="card-custom">
+                        <a class="card-nombre" href="./pages/productos.html">GUITARRAS ELECTRICAS</a>
                     </div>
-                    </section>
+                    <div class="img-product">
+                        <img src="./imagenes/bajos.jpg"" alt="guitarra " class="card-custom">
+                        <a class="card-nombre" href="./pages/productos.html">BAJOS</a>
+                    </div>
+                    <div class="img-product">
+                        <img src="./imagenes/acustica.jpg" alt="guitarra " class="card-custom">
+                        <a class="card-nombre" href="./pages/productos.html">ACUSTICAS</a>
+                    </div>
+                    <div class="img-product">
+                        <img src="./imagenes/accesorios.jpg" alt="guitarra " class="card-custom">
+                        <a class="card-nombre" href="./pages/productos.html">ACCESORIOS</a>
+                    </div>
+                </div>
+             </section>
              </div>
-            <hr>
             <section class="sn">
                 <img src="./imagenes/guitarra-pasion.jpeg" alt="guitarrista apasionado" class="img-sn">
                 <div class="sn-2">
@@ -88,28 +74,59 @@
                     <button class="btn">Sobre Nosotros</button>
                     </div>
             </section> 
-            <hr>
             <section>
-                <h2 class="card-titulo">GALERIA</h2> 
-                <div class="galeria">
-                    <img src="./imagenes/galeria 1.jpg" class="gal-1" alt="foto">
-                    <img src="./imagenes/galeria 2.jpg" class="gal-2" alt="foto">
-                    <img src="./imagenes/galeria 3.jpg" class="gal-3" alt="foto">
-                    <img src="./imagenes/galeria 4.jpg" class="gal-4" alt="foto">
+                <h2 class="card-titulo">GALERIA</h2>
+                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img class="gal-x" src="./imagenes/galeria 1.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="gal-x" src="./imagenes/galeria 7.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="gal-x" src="./imagenes/galeria 4.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img class="gal-x" src="./imagenes/galeria 5.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
+                
             </section> 
         </main>
         <footer>
             <h3>Telefono: 555-5555</h3>
             <h3>Mail: alg@gmail.com</h3>
-            <div id="foot-1">
+            <form class="row gy-2 gx-3 align-items-center">
                 <div class="foot">
-                    <input type=" text" name="full-name" id="nombre" placeholder="Nombre y Apellido" class="foot-inp">
-                    <input type="text" name="phone-number" id="telefono" placeholder="Telefono" class="foot-inp">
-                    <input type="text" name="mail" id="correo" placeholder="Mail" class="foot-inp">
+                    <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInput">Nombre</label>
+                    <input type="text" class="form-control" id="autoSizingInput" placeholder="Nombre">
+                    </div>
+                    <div class="col-auto">
+                    <label class="visually-hidden" for="autoSizingInputGroup">Apellido</label>
+                    <div class="input-group">
+                    
+                        <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Mail">
+                    </div>
+                    </div>
+                        <div class="foot-1">
+                        <div class="col-auto">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
                 </div>
-                <input type="submit" value="enviar" class="btn-2">
-            </div>
+              </form>
+           
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
