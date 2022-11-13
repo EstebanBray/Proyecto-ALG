@@ -5,19 +5,25 @@
     
     
 }
-header{
+.header-custom{
     background-color: #011627;
     width: 100%;
     height: 110px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    
 }
 .li a{
     color: black;
 }
 
     /*css header*/
+    
+    
+    header{
+        background-color: #32506A;
+    }
 
 .header__logo{
     width: 100px;
@@ -25,13 +31,14 @@ header{
     padding: 5px;
 }
 .menu{
+    width: 100%;
     font-size:x-large;
     font-weight: bold;
     display: flex;
     list-style-type: none;
     flex-direction: row;
-    justify-content: space-around; 
-    padding: 0 100px;
+    justify-content: space-between; 
+    justify-content: center;
     color: white;
     }
 .sub-menu{
@@ -57,11 +64,23 @@ header{
         display: flex;
         align-items: flex-end;
     }
+    @media screen and (max-width:768px) {
+      .contenedor{
+        height: 40vh;
+      }  
+        
+    }
     .titulo{
         font-size: 80px;
         font-weight: bold;
         color: #FDFFFC;
+    }
+    @media screen and (max-width: 768px) {
+        .titulo{
+            font-size: 40px;
 
+        }
+        
     }
     .texto{
         height: 100px;
@@ -73,14 +92,32 @@ header{
          background-size: 400px ;
         display: flex;
         justify-content: center;
-        align-items: center;    
-}
+        align-items: center;     
+    }
+    @media screen and (max-width:768px) {
+        .texto{
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: 5px;
+        }
+        
+    }
+
+
     h2{
         height: 120px;
         font-size: 40px;
         text-align: center;
         background-color: #011627;
         color: white;
+    }
+    @media screen and (max-width:768px){
+        h2{
+            height: 80px;
+        }
+        
     }
     .card-titulo{
         display: flex;
@@ -269,4 +306,17 @@ line-height: 80px;
     font-weight: bolder;
     background-color: #32506A;
     color: white;
+}
+
+/* productos */
+
+.guitarra-titulo{
+    font-size: 20px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: black solid 2px;
+    padding-left: 0px;
+    margin: 0px;
 }
