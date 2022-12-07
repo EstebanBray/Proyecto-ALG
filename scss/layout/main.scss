@@ -1,5 +1,5 @@
 .contenedor{
-    background-image: url("https://www.shutterstock.com/image-photo/electric-guitar-repair-vintage-on-600w-287661821.jpg");
+    background-image: url("https://images.pexels.com/photos/5855776/pexels-photo-5855776.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
     width:100%;
     height: 90vh;
     background-repeat: no-repeat;
@@ -174,11 +174,17 @@ h2{
         font-size: 20px;
     }
 }
+.img-fix{
+    width: 100%;
+    height: 90vh;
+
+}
 
 .gal-x{
     width: 100%;
     height: 90vh;
     object-fit: cover;
+
 }
 
 
@@ -248,4 +254,18 @@ h2{
         color: white;
     }
     
+    .map-responsive{
+        overflow:hidden;
+        padding-bottom:40%;
+        position:relative;
+        height:0;
+    }
+    
+    .map-responsive iframe{
+        left:0;
+        top:0;
+        height:100%;
+        width:100%;
+        position:absolute;
+    }
     
