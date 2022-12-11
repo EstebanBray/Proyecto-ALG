@@ -7,6 +7,7 @@ footer{
         font-weight: bold;
         margin-left: 20px;
         color: white;
+        padding-top: 15px;
     }
     .foot{
         display: flex;
@@ -15,6 +16,14 @@ footer{
         margin-top: 10px;
         margin-left: 20px;
     }
+}
+
+.col-auto{
+    padding-bottom: 3px;
+}
+
+.foot-1{
+    padding-top: 3px;
 }
 @media screen and (max-width: 768px) {
     footer{

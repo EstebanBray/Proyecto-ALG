@@ -15,13 +15,20 @@ footer {
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     margin-left: 20px;
-    color: white; }
+    color: white;
+    padding-top: 15px; }
   footer .foot {
     display: flex;
     flex-direction: column;
     width: 200px;
     margin-top: 10px;
     margin-left: 20px; }
+
+.col-auto {
+  padding-bottom: 3px; }
+
+.foot-1 {
+  padding-top: 3px; }
 
 @media screen and (max-width: 768px) {
   footer {
@@ -32,11 +39,12 @@ footer {
 .header-custom {
   background-color: #011627;
   width: 100%;
-  height: auto;
+  height: 100px;
   z-index: 3000;
   display: flex;
   flex-direction: row;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 10px; }
   .header-custom .menu {
     width: 100%;
     font-size: x-large;
@@ -49,8 +57,7 @@ footer {
     color: white; }
   .header-custom .header__logo {
     width: 100px;
-    height: 100px;
-    padding: 5px; }
+    height: 100px; }
   .header-custom .nav-color {
     color: white; }
   .header-custom a {
@@ -77,14 +84,6 @@ footer {
     font-weight: bold;
     color: #FDFFFC; }
 
-@media screen and (max-width: 768px) {
-  .contenedor {
-    height: 40vh; } }
-
-@media screen and (max-width: 768px) {
-  .titulo {
-    font-size: 40px; } }
-
 .texto {
   height: 100px;
   background-color: black;
@@ -96,14 +95,6 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center; }
-
-@media screen and (max-width: 768px) {
-  .texto {
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 5px; } }
 
 h2 {
   height: 120px;
@@ -117,13 +108,10 @@ h2 {
   justify-content: center;
   margin-bottom: 0; }
 
-@media screen and (max-width: 768px) {
-  h2 {
-    height: 80px; } }
-
 .products {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 25px;
   margin-bottom: 2px;
@@ -153,13 +141,6 @@ h2 {
     transform: rotatey(360deg);
     transition: all 2s ease; }
 
-@media screen and (max-width: 768px) {
-  .products {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between; } }
-
 .sn {
   display: flex;
   flex-direction: row;
@@ -185,20 +166,6 @@ h2 {
     color: beige;
     background-color: black; }
 
-@media screen and (max-width: 768px) {
-  .sn {
-    display: flex;
-    flex-direction: column;
-    align-items: center; } }
-
-@media screen and (max-width: 768px) {
-  .img-sn {
-    width: 100%; } }
-
-@media screen and (max-width: 768px) {
-  .parrafo-sn {
-    font-size: 20px; } }
-
 .img-fix {
   width: 100%;
   height: 90vh; }
@@ -218,10 +185,6 @@ h2 {
   justify-content: center;
   align-items: center; }
 
-@media screen and (max-width: 768px) {
-  .titulo-servicios {
-    font-size: 20px; } }
-
 .servicio-restauracion {
   display: flex;
   flex-direction: row;
@@ -239,15 +202,6 @@ h2 {
   text-align: center;
   margin-left: 0;
   margin-bottom: 0%; }
-
-@media screen and (max-width: 768px) {
-  .intro-servicios {
-    font-size: 20px;
-    line-height: 50px; } }
-
-@media screen and (max-width: 768px) {
-  .servicio-restauracion {
-    flex-direction: column; } }
 
 .product-titulo {
   font-weight: bold; }
@@ -276,10 +230,6 @@ h2 {
 .column img {
   margin-top: 5px; }
 
-@media screen and (max-width: 768px) {
-  .column {
-    flex: 100%; } }
-
 #contacto {
   text-align: center;
   font-weight: bolder;
@@ -298,3 +248,67 @@ h2 {
   height: 100%;
   width: 100%;
   position: absolute; }
+
+@media screen and (max-width: 768px) {
+  .contenedor {
+    height: 40vh; } }
+
+@media screen and (max-width: 768px) {
+  .titulo.titulo {
+    font-size: 40px; } }
+
+@media screen and (max-width: 768px) {
+  .texto {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 5px; } }
+
+@media screen and (max-width: 768px) {
+  h2 {
+    height: 80px; } }
+
+@media screen and (max-width: 768px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between; } }
+
+@media screen and (max-width: 768px) {
+  .sn {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+
+@media screen and (max-width: 768px) {
+  .img-sn {
+    width: 100% !important; } }
+
+@media screen and (max-width: 768px) {
+  .parrafo-sn {
+    font-size: 20px;
+    display: flex;
+    text-align: center; } }
+
+@media screen and (max-width: 768px) {
+  .titulo-servicios {
+    font-size: 20px; } }
+
+@media screen and (max-width: 768px) {
+  .intro-servicios {
+    font-size: 20px;
+    line-height: 50px; } }
+
+@media screen and (max-width: 768px) {
+  .servicio-restauracion {
+    flex-direction: column; } }
+
+@media screen and (max-width: 768px) {
+  .column {
+    flex: 100%; } }
+
+@media screen and (max-width: 768px) {
+  .map-responsive {
+    height: 40vh; } }
